@@ -2,7 +2,7 @@ export default function Facilidades() {
   return (
     <div className="bg-black pb-9 mt-[100px]">
       <h1 className="text-white text-center py-10 text-3xl max-sm:text-2xl">Conheça todas as nossas facilidades</h1>
-      <div className="text-white flex-col flex items-center md:gap-4 ml-10 md:flex md:flex-row md:justify-center md:w-max md:mx-auto md:items-center max-sm:pl-6 max-sm:w-[360px]">
+      <div className="text-white flex-col flex items-center max-sm:pl-8 md:gap-4 ml-10 max-sm:ml-0 md:flex md:flex-row md:justify-center md:w-max md:mx-auto md:items-center max-sm:w-[360px]">
         <div className="flex items-center md:justify-center md:mb-0 gap-6 mb-10 max-sm:w-full max-md:w-[400px] w-[350px]">
           <img
             src="../../Desktop/Ícones/x-diamond (2).png"
