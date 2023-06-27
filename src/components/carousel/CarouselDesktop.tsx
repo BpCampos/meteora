@@ -40,7 +40,7 @@ export default function CarouselDesktop() {
           className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-active
           data-te-carousel-item>
-          <img src="../../Desktop/Banner carousel 1 _ 1440 (1).png" className="block" alt="..." />
+          <img src="../../Desktop/Banner carousel 1 _ 1440 (1).png" className="block w-full" alt="..." />
         </div>
 
         <div
