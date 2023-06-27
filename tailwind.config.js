@@ -18,6 +18,16 @@ module.exports = {
           300: '#DAFF01'
         },
       },
+
+      screens: {
+        'sm': '375px'
+      },
+
+      backgroundImage: {
+        'banner-1': './Mobile/Banner carousel 1 _ 375.png',
+        'banner-2': './Mobile/Banner carousel 2 _ 375.png',
+        'banner-3': './Mobile/Banner carousel 3 _ 375.png'
+      }
     },
   },
   plugins: [require("tw-elements/dist/plugin.cjs")],

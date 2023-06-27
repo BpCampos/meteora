@@ -1,8 +1,13 @@
 'use client'
-import { Carousel, initTE } from 'tw-elements'
-initTE({ Carousel })
 
-export default function CarouselBanner() {
+import { useEffect } from 'react'
+import { Carousel, initTE } from 'tw-elements'
+
+export default function CarouselDesktop() {
+  useEffect(() => {
+    initTE({ Carousel })
+  }, [])
+
   return (
     <div id="carouselExampleCaptions" className="relative" data-te-carousel-init data-te-carousel-slide>
       <div
@@ -35,7 +40,7 @@ export default function CarouselBanner() {
           className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-active
           data-te-carousel-item>
-          <img src="../../Desktop/Banner carousel 1 _ 1440 (1).png" className="block w-full -mt-1" alt="..." />
+          <img src="../../Desktop/Banner carousel 1 _ 1440 (1).png" className="block" alt="..." />
         </div>
 
         <div
