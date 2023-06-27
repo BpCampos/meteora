@@ -27,7 +27,24 @@ module.exports = {
         'banner-1': './Mobile/Banner carousel 1 _ 375.png',
         'banner-2': './Mobile/Banner carousel 2 _ 375.png',
         'banner-3': './Mobile/Banner carousel 3 _ 375.png'
+      },
+
+      keyframes: {
+        'show': {
+          '0%': {
+            'opacity': 0
+          },
+          '100%': {
+            'opacity': 1
+          }
+
+        }
+      },
+
+      animation: {
+        show: 'show 300ms ease-in-out'
       }
+
     },
   },
   plugins: [require("tw-elements/dist/plugin.cjs")],
