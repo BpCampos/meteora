@@ -2,6 +2,7 @@ import Footer from '@/components/Footer'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
+import Modal from '@/components/produtosNovidades/Modal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} max-w-[1440px] mx-auto min-w-full`}>
+      <body className={`${inter.className} max-w-[1440px] mx-auto`}>
         <Header />
         {children}
         <Footer />
