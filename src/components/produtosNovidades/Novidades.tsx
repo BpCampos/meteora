@@ -6,6 +6,7 @@ import Modal from './Modal'
 
 export default function Novidades() {
   const [isOpen, setIsOpen] = useState(false)
+  const [productId, setProductId] = useState('')
 
   function openModal() {
     if (!isOpen) {
@@ -15,9 +16,13 @@ export default function Novidades() {
     }
   }
 
+  function catchId(id: string) {
+    return setProductId(id)
+  }
+
   return (
     <div className="mt-14 relative">
-      {isOpen && <Modal isOpen={isOpen} openModal={openModal} />}
+      {isOpen && <Modal isOpen={isOpen} openModal={openModal} productId={productId} />}
       <h1 className="text-center mb-8 text-3xl font-semibold">Produtos que estão bombando!</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 place-items-center max-w-[690px] md:max-w-[1110px] mx-auto gap-y-6 max-sm:grid-cols-1">
         {produtos.map((produto) => {
@@ -29,6 +34,8 @@ export default function Novidades() {
               descricao={produto.descricao}
               preco={produto.preco}
               openModal={openModal}
+              catchId={catchId}
+              id={produto.id}
             />
           )
         })}

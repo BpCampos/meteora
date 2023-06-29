@@ -3,10 +3,12 @@ interface novidadeCardContent {
   nome: string
   descricao: string
   preco: number
+  id: string
   openModal: () => void
+  catchId: (id: string) => void
 }
 
-export default function Card({ image, nome, descricao, preco, openModal }: novidadeCardContent) {
+export default function Card({ image, nome, descricao, preco, id, openModal, catchId }: novidadeCardContent) {
   return (
     <div className="shadow-md w-[330px] md:w-[350px] h-[620px]">
       <img src={image} alt="" />
@@ -16,7 +18,13 @@ export default function Card({ image, nome, descricao, preco, openModal }: novid
         <p className="font-bold text-lg">R$ {preco.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</p>
       </div>
       <div className="mx-3 mt-2 mb-3 py-1 px-4 bg-purple-600 w-fit text-white">
-        <button onClick={openModal}>Ver mais</button>
+        <button
+          onClick={() => {
+            openModal()
+            catchId(id)
+          }}>
+          Ver mais
+        </button>
       </div>
     </div>
   )
