@@ -52,16 +52,31 @@ export default function Modal({ isOpen, openModal, productId }: modalProps) {
                 <div className="border-b-2 border-gray-600/30">
                   <p className="mb-4 font-bold">Cores:</p>
                   <div className="flex gap-6 w-full">
-                    <div className="flex flex-col mb-3">
-                      <input type="radio" name="colorRadio" id="Azul" />
-                      <label htmlFor="Azul">Azul</label>
+                    <div className="flex flex-col mb-3 items-center">
+                      <input
+                        type="radio"
+                        name="colorRadio"
+                        id="Azul"
+                        className="bg-blue-400  checked:bg-purple-600 checked: text-purple-600 focus:ring-transparent"
+                      />
+                      <label htmlFor="Azul">Azul Claro</label>
                     </div>
-                    <div className="flex flex-col">
-                      <input type="radio" name="colorRadio" id="Offwhite" />
+                    <div className="flex flex-col items-center">
+                      <input
+                        type="radio"
+                        name="colorRadio"
+                        id="Offwhite"
+                        className="focus:ring-transparent checked:bg-purple-600 text-purple-600"
+                      />
                       <label htmlFor="Offwhite">Offwhite</label>
                     </div>
-                    <div className="flex flex-col">
-                      <input type="radio" name="colorRadio" id="Preto" className="bg-" />
+                    <div className="flex flex-col items-center">
+                      <input
+                        type="radio"
+                        name="colorRadio"
+                        id="Preto"
+                        className="bg-black focus:ring-transparent checked:bg-purple-600 text-purple-600"
+                      />
                       <label htmlFor="Preto">Preto</label>
                     </div>
                   </div>
@@ -70,23 +85,48 @@ export default function Modal({ isOpen, openModal, productId }: modalProps) {
                   <p className="mb-4 mt-4 font-bold">Tamanho:</p>
                   <div className="flex gap-6 w-full">
                     <div className="flex flex-col">
-                      <input type="radio" name="sizeModal" id="P" />
+                      <input
+                        type="radio"
+                        name="sizeModal"
+                        id="P"
+                        className="focus:ring-transparent checked:bg-purple-600 text-purple-600"
+                      />
                       <label htmlFor="P">P</label>
                     </div>
                     <div className="flex flex-col">
-                      <input type="radio" name="sizeModal" id="PP" />
+                      <input
+                        type="radio"
+                        name="sizeModal"
+                        id="PP"
+                        className="focus:ring-transparent checked:bg-purple-600 text-purple-600"
+                      />
                       <label htmlFor="PP">PP</label>
                     </div>
                     <div className="flex flex-col">
-                      <input type="radio" name="sizeModal" id="M" />
+                      <input
+                        type="radio"
+                        name="sizeModal"
+                        id="M"
+                        className="focus:ring-transparent checked:bg-purple-600 text-purple-600"
+                      />
                       <label htmlFor="M">M</label>
                     </div>
                     <div className="flex flex-col">
-                      <input type="radio" name="sizeModal" id="G" />
+                      <input
+                        type="radio"
+                        name="sizeModal"
+                        id="G"
+                        className="focus:ring-transparent checked:bg-purple-600 text-purple-600"
+                      />
                       <label htmlFor="G">G</label>
                     </div>
                     <div className="flex flex-col">
-                      <input type="radio" name="sizeModal" id="GG" />
+                      <input
+                        type="radio"
+                        name="sizeModal"
+                        id="GG"
+                        className="focus:ring-transparent checked:bg-purple-600 text-purple-600"
+                      />
                       <label htmlFor="GG">GG</label>
                     </div>
                   </div>
