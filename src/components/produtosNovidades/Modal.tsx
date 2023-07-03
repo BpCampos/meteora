@@ -18,7 +18,7 @@ export default function Modal({ isOpen, openModal, productId }: modalProps) {
 
   return (
     <div className="absolute w-full inset-0 bg-neutral-700/0 z-10 flex items-center">
-      <div className={`w-1/2 bg-white mx-auto duration-300 translate${isOpen ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`w-[55%] bg-white mx-auto`}>
         <div className="bg-black text-white flex  justify-between py-2 text-xl">
           <div className="flex gap-6 items-center">
             <img src="../../Desktop/productModalIcon.svg" alt="" className="ml-4" />
@@ -36,11 +36,11 @@ export default function Modal({ isOpen, openModal, productId }: modalProps) {
                   <img src={produto.image} alt="" />
                 </div>
               </section>
-              <section className="p-2 w-[50%]">
+              <section className="p-2 pr-7 w-[50%]">
                 <div>
                   <div className="border-b-2 border-gray-600 mb-5">
                     <p className="mb-3 font-bold">{produto.nome}</p>
-                    <p className="w-[85%] mb-6">{produto.descricao}</p>
+                    <p className="w-full mb-6">{produto.descricao}</p>
                   </div>
                   <div className="border-b-2 border-gray-600/30 mb-3">
                     <p className="mb-5 font-bold text-2xl">

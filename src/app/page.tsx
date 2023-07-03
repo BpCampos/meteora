@@ -1,6 +1,6 @@
 import CarouselDesktop from '@/components/carousel/CarouselDesktop'
 import Facilidades from '@/components/Facilidades'
-import NewsLetter from '@/components/NewsLetter'
+import NewsLetter from '@/components/newsLetter/NewsLetter'
 import Categorias from '@/components/categorias/Categorias'
 import Novidades from '@/components/produtosNovidades/Novidades'
 
